@@ -1,0 +1,396 @@
+.App {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+
+.tableCars {
+    display: flex;
+    width: 90%;
+}
+
+.carsTable {
+    border: none;
+    background-color: #FFBB33;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+
+.carsTable td, .carsTable th {
+    border: none;
+    padding: 3px 2px;
+}
+
+.carsTable td, .carsTable th:nth-child(1) {
+    width: 150px;
+    height: 35px;
+}
+
+.carsTable td, .carsTable th:nth-child(2) {
+    width: 150px;
+    height: 35px;
+}
+
+.carsTable td, .carsTable th:nth-child(3) {
+    width: 110px;
+    height: 35px;
+}
+
+.carsTable td, .carsTable th:nth-child(4) {
+    width: 80px;
+    height: 35px;
+}
+
+.carsTable tbody td {
+    font-size: 16px;
+}
+
+.carsTable thead {
+    background: #5588AA;
+    border-bottom: none;
+}
+
+.carsTable thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: none;
+}
+
+.carsTable thead th:first-child {
+    border-left: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    margin-left: 1px;
+}
+
+.btnTable {
+    background-color: #5588AA;
+
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.selects {
+    display: flex;
+    flex-direction: column;
+    background: #FFBB33;
+}
+
+label {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.select {
+    display: block;
+    font-size: 12px;
+    padding: .3em .5em .3em .5em;
+    width: 200px;
+    max-width: 80%;
+    box-sizing: border-box;
+    margin-left: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.paginatorContainer {
+    width: 90%;
+}
+
+.paginator {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFBB33;
+}
+
+.loader {
+    position: fixed;
+    margin: 0 auto;
+    top: 100px;
+    right: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1eff28;
+
+}
+
+.addCar {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectTenant {
+    margin-top: 50px;
+}
+
+.search {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.search input {
+    width: 140px;
+    height: 20px;
+}
+
+
+.search button {
+    background-color: #5588AA;
+    margin-left: 5px;
+
+}
+
+.settingBtnAll, .settingBtnInTerritory {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.btnAll {
+    background-color: #5588AA;
+    width: 170px;
+}
+
+.settingAddCar {
+    margin-left: 10px;
+}
+
+.settingAddCar button {
+    background-color: #5588AA;
+    width: 170px;
+}
+
+.addCarSelect {
+    width: 170px;
+    margin-bottom: 5px;
+}
+
+.addCarInput {
+    width: 165px;
+    margin-bottom: 5px;
+}
+
+.addCarBtn {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+    .tableCars {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    .selects {
+        display: flex;
+        height: 168px;
+    }
+
+    .selectTenant {
+        margin-top: 10px;
+    }
+
+    .settingBtnAll {
+        position: absolute;
+        left: 270px;
+        top: 227px;
+    }
+
+    .settingBtnInTerritory {
+        position: absolute;
+        left: 270px;
+        top: 284px;
+    }
+
+    .btnAll {
+        height: 34px;
+    }
+
+    .settingAddCar {
+        position: absolute;
+        left: 450px;
+        top: 227px;
+    }
+
+    .addCarBtn {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tableCars {
+        width: 100%;
+    }
+
+    .paginatorContainer {
+        width: 100%;
+    }
+
+    .settingBtnAll {
+        left: 210px;
+    }
+
+    .settingBtnInTerritory {
+        left: 210px;
+    }
+
+    .settingAddCar {
+        left: 390px;
+    }
+}
+
+@media (max-width: 700px) {
+    .carsTable thead th {
+        font-size: 14px;
+    }
+
+    .carsTable tbody td {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 578px) {
+    .selects {
+        height: 250px;
+        font-size: 14px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+
+    .settingBtnAll {
+        top: 215px;
+        left: 0;
+    }
+
+    .settingBtnInTerritory {
+        top: 258px;
+        left: 0;
+    }
+
+    .settingAddCar {
+        top: 77px;
+        left: 210px;
+    }
+    .loader {
+        top: 5px;
+        right: 100px;
+            }
+}
+
+@media (max-width: 532px) {
+
+    .carsTable {
+        text-align: right;
+    }
+
+    .carsTable thead th {
+        font-size: 16px;
+
+    }
+
+    .carsTable tbody td {
+        font-size: 16px;
+    }
+
+    .carsTable td, .carsTable th {
+        border: none;
+        padding: 0
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #5588AA;
+
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #5588AA;
+        position: relative;
+        padding-left: 50%;
+        width: 100% !important;
+    }
+
+    td:before {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        padding-right: 5px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Арендатор";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Марка";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Модель";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Гос. номер";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Дата и время заезда";
+    }
+
+    td:nth-of-type(6):before {
+        content: "Выезд";
+    }
+
+    td:nth-of-type(7):before {
+        content: "Заезд";
+    }
+}
+
+
+@media (max-width: 400px) {
+    .selects {
+        height: 392px;
+    }
+
+    .settingAddCar {
+        top: 300px;
+        left: 0;
+    }
+}
+
+
+
